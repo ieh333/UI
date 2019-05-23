@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Ivan Georgiev">
+<link rel="stylesheet" href="zadacha_4.css">
+<script type="application/javascript" src="String_processing.js"></script>
+<script type="application/javascript" src="Array_processing.js"></script>
+<title>Задача 4</title>
+</head>
+<body>
+<div class="string">
+<p>
+Методи за работа с обекта String.
+</p>
+<form name="string_form">
+Низ: <input type="text" name="string" value="">&nbsp;&nbsp;&nbsp;
+Подниз 1: <input type="text" name="sub_string1" value=""><br />
+Подниз 2: <input type="text" name="sub_string2" value=""><br /><br />
+Позиция: <input type="number" name="position" size="2" min="0"><br /><br /><br />
+<input type="radio" name="method" value="UpperCase">Смяна на буквите от низа в ГЛАВНИ<br />
+<input type="radio" name="method" value="indexOf">Връщане номера на позицията, където поднизът се среща за първи път<br />
+<input type="radio" name="method" value="replace">Търсене и заменяне на текста от низа по даден регулярен израз<br /><br />
+<input type="button" value="Изпълни" onclick="String_processing();">
+</form>
+<br /><br /><br />
+<p id="result1">
+</p>
+</div>
+<div class="array">
+<p>
+Методи за работа с обекта Array.
+</p>
+<form name="array_form">
+Низ: <input type="text" name="array1">&nbsp;&nbsp;&nbsp;
+Низ 2: <input type="text" name="array2"><br /><br />
+<select id = "array_method">
+<option value="" selected></option>
+<option value="push">Добавяне на елементи в края на масива</option>
+<option value="shift">Връщане на първия елемент от масива и го изтрива от него</option>
+<option value="sort">Сортиране на масив</option>
+</select>
+<br /><br /><br /><br /><br /><br /><br /><br />
+<input type="button" value="Изпълни" onclick="Array_processing();">
+</form>
+<br /><br />
+<p id="result2">
+</p>
+<p id="result3">
+</p>
+</div>
+</body>
+</html>

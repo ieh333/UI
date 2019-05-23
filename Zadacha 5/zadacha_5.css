@@ -1,0 +1,28 @@
+body {
+	
+	background-color: #ccff99;
+}
+
+h1 {
+	text-align: center;
+}
+
+#vid {
+	font-weight: bold;
+}
+
+#form_car {
+	display: block;
+	text-align: center;
+	font-size: 17pt;
+}
+
+#print {
+	font-size: 15pt;
+}
+
+#result {
+	display: block;
+	font-size: 18pt;
+	font-weight: bolder;
+}

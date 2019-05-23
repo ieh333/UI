@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Ivan Georgiev">
+<script type="application/javascript" src="Insert.js"></script>
+<script type="application/javascript" src="ChangeTextColor.js"></script>
+<title>Задача 1</title>
+</head>
+<body>
+<div>
+<script>
+// Create a <p> element
+let par1 = document.createElement("p"); 
+// Insert text
+par1.innerText="Отдавна отмина времето на статичтите уеб страници.";
+// Append <p> to <body> in HTML document
+document.body.appendChild(par1);
+let par2 = document.createElement("p");
+par2.innerText="Да си представим, че имаме база данни, например списък със стоки за интернет магазин, и искаме да ги покажем на нашия сайт.";
+document.body.appendChild(par2);
+let par3 = document.createElement("p");
+par3.innerText="Сега ще поговорим за автоматизацията при клиента.";
+document.body.appendChild(par3);
+let par4 = document.createElement("p");
+par4.innerText="Вместо HTML код със списък с продукти, нашият PHP сценарий ще изпрати код на JavaScript сценарий, който ще се изпълни при клиента, а не на сървъра.";
+document.body.appendChild(par4);
+let par5 = document.createElement("p");
+par5.innerText="JavaScript кодът се намира в HTML документа (или е изнесен в отделен файл, ако кодът е обемен).";
+document.body.appendChild(par5);
+</script>
+</div>
+<div>
+<h3 id="one"></h3>
+<h3 id="two"></h3>
+<h3 id="three"></h3>
+<h3 id="four"></h3>
+<h3 id="five"></h3>
+<script>
+document.getElementById("one").innerHTML = par1.innerText;
+document.getElementById("two").innerHTML = par2.innerText;
+document.getElementById("three").innerHTML = par3.innerText;
+document.getElementById("four").innerHTML = par4.innerText;
+document.getElementById("five").innerHTML = par5.innerText;
+</script>
+</div>
+<script>
+function InsertText() {
+document.getElementById("edno").innerHTML = "Отдавна отмина времето на статичтите уеб страници.";
+document.getElementById("dve").innerHTML = "Да си представим, че имаме база данни, например списък със стоки за интернет магазин, и искаме да ги покажем на нашия сайт.";
+document.getElementById("tri").innerHTML = "Сега ще поговорим за автоматизацията при клиента.";
+document.getElementById("chetiri").innerHTML = "Вместо HTML код със списък с продукти, нашият PHP сценарий ще изпрати код на JavaScript сценарий, който ще се изпълни при клиента, а не на сървъра.";
+document.getElementById("pet").innerHTML = "JavaScript кодът се намира в HTML документа (или е изнесен в отделен файл, ако кодът е обемен).";
+}
+</script>
+<br />
+<div>
+<button type="button" onclick="InsertText()">Insert text in H3 element in HTML document</button> 
+<h3 id="edno"></h3>
+<h3 id="dve"></h3>
+<h3 id="tri"></h3>
+<h3 id="chetiri"></h3>
+<h3 id="pet"></h3>
+</div>
+<br />
+<div>
+<button type="button" onclick="Insert()">Insert text in H3 element in HTML document (from JS file)</button> 
+<h3 id="parvi"></h3>
+<h3 id="vtori"></h3>
+<h3 id="treti"></h3>
+<h3 id="chetvarti"></h3>
+<h3 id="peti"></h3>
+</div>
+<br />
+<button type="button" onclick="ChangeTextColor()">Change text color(from JS file)</button>
+</body>
+</html>

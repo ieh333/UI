@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Ivan Georgiev">
+<link rel="stylesheet" href="zadacha_5.css">
+<script type="text/javascript" src="http://chir.ag/projects/ntc/ntc.js"></script>
+<script type="application/javascript" src="car.js"></script>
+<title>Задача 5</title>
+</head>
+<body>
+<h1>Регистрация на автомобил</h1>
+<form name="car" id="form_car">
+<label for="type" id="vid">Вид автомобил:</label><br />
+<input type="radio" name="type" id="type1" value="car">Лека
+&nbsp;&nbsp;
+<input type="radio" name="type" id="type2" value="lightweight">Лекотоварна
+&nbsp;&nbsp;
+<input type="radio" name="type" id="type3" value="cargo">Товарна
+<br /><br />
+<label for="brand">Марка:</label>
+<select id="brand">
+<option value="Opel">Opel</option>
+<option value="Audi">Audi</option>
+<option value="Škoda">Škoda</option>
+<option value="UAZ">UAZ</option>
+<option value="Volvo">Volvo</option>
+<option value="GAZ">GAZ</option>
+<option value="Ford">Ford</option>
+<option value="Mercedes-Benz">Mercedes-Benz</option>
+<option value="Rolls-Royce">Rolls-Royce</option>
+<option value="Rover">Rover</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<label for="model">Модел:</label>
+<input type="text" name="model" id="model">
+<br /><br />
+<label for="power">Мощност:</label>
+<input type="number" name="power" id="power" min="100" max="3000">
+&nbsp;&nbsp;&nbsp;
+<label for="color">Цвят:</label>
+<input type="color" name="color" id="color"><br /><br />
+<label for="year">Година на производство:</label>
+<input type="number" name="year" id="year" min="1900" max="2018">
+<br /><br />
+<input type="button" name="print" id="print" value="Отпечати" onclick="Print_car()">
+</form>
+<br /><br /><br />
+<div>
+<p id="result">
+</p>
+</div>
+</body>
+</html>
